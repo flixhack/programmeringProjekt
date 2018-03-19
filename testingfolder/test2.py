@@ -1,2 +1,2 @@
 import tkinter as tk
-hej felle du er grim
+hej felle du er en grim gris
