@@ -7,7 +7,7 @@
   </head>
 
 <body>
-<img src="Mellow2.png" alt="Title" style="width:220px;height:100px;">
+<img src="Mellow2.png" alt="Title" style="width:190px;height:40px;">
 <p>Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
   </body>
 
