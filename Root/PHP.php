@@ -7,8 +7,8 @@
   </head>
 
 <body>
-<h1> Mellow </h1>
+<img src="Mellow2.png" alt="Title" style="width:220px;height:100;">
 <p>Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
   </body>
 
-</html>  
+</html>
