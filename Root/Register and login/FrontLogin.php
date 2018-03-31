@@ -12,4 +12,9 @@
 <p class="sansserif">Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
   </body>
 
+
+  <input type="password" style="position:absolute;TOP:35px;left:1100px" name="fname"><br>
+  <input type="text" style="position:absolute;TOP:35px;left:970px" name="fname"><br>
+  <input type="image" src="login.png" alt="login" style="position:absolute;TOP:35px;left:1220px;WIDTH:32;HEIGHT:32">
+
 </html>
