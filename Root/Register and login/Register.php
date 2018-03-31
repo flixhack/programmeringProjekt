@@ -1,5 +1,7 @@
 
 <html lang="en" dir="ltr">
+ <input type="text" align="middle">
+ <input type="image" src="submit.gif" alt="Submit" align="right" width="48" height="48">
   <head>
     <meta charset="utf-8">
     <title> Mellow </title>
