@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title> Mellow </title>
     <link href="interface.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="icon.png">
   </head>
 
 <body>
