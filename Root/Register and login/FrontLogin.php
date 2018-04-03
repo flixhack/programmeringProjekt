@@ -14,7 +14,8 @@
 
 
   <input type="password" style="position:absolute;TOP:35px;left:1100px" name="fname"><br>
-  <input type="text" style="position:absolute;TOP:35px;left:970px" name="fname"><br>
+  <input type="email" style="position:absolute;TOP:35px;left:970px" name="fname"><br>
   <input type="image" src="login.png" alt="login" style="position:absolute;TOP:35px;left:1220px;WIDTH:32;HEIGHT:32">
 
+  <A HREF="Registre.php">Not user yet? Registre here!</A>
 </html>
