@@ -9,9 +9,7 @@
 
 <body>
 <img src="Mellow2.png" alt="Title" style="width:190px;height:40px;">
-<p class="sansserif">Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
 <style>
-body {margin:0;}
 
 .icon-bar {
     width: 100%;
@@ -20,18 +18,15 @@ body {margin:0;}
 }
 
 .icon-bar a {
-    float: right;
-    width: 10%;
+    float: left;
+    width: 25%;
     text-align: center;
-    padding: 12px 0;
+    padding: 3px 0;
     transition: all 0.3s ease;
     color: grey;
-    font-size: 36px;
+    font-size: 24px;
 }
 
-.icon-bar a:hover {
-    background-color: #000;
-}
 
 .active {
     background-color: #ffff00 !important;
@@ -40,10 +35,12 @@ body {margin:0;}
 <body>
 
 <div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a>
-  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="#"><i class="fa fa-home"></i></a>
   <a href="#"><i class="fa fa-envelope"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="#"><i class="fa fa-user"></i></a>
 </div>
+<p class="sansserif">Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
   </body>
 
 </html>
