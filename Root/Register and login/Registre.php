@@ -18,16 +18,14 @@
 <p class="sansserif" style="position:absolute;TOP:340;left:448"> Confirm Password</P>
   </body>
 
+<input type="email" style="position:absolute;TOP:250px;left:600px;WIDTH:200" name="email"><br>
+<input type="text" style="position:absolute;TOP:275px;left:600px;WIDTH:200" name="fname"><br>
+<input type="text" style="position:absolute;TOP:300px;left:600px;WIDTH:200" name="lname"><br>
+<input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw"><br>
+<input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw"><br>
 
-  <input type="email" style="position:absolute;TOP:250px;left:600px;WIDTH:200" name="email"><br>
-  <input type="text" style="position:absolute;TOP:275px;left:600px;WIDTH:200" name="fname"><br>
-  <input type="text" style="position:absolute;TOP:300px;left:600px;WIDTH:200" name="lname"><br>
-  <input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw"><br>
-  <input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw"><br>
-
-
-  <input type="image" src="login.png" alt="login" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
-<A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a user?Login Here!</A>
+<A HREF="FrontLogin.php"><Button type="Button" onclick="windows.location.href='databaseTest.php'" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></a>
+<A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member?Login Here!</A>
 
 
 </html>
