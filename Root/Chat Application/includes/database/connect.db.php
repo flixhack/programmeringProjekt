@@ -1,22 +1,21 @@
 <?php
 
-$db_host = 'localhost';
+$db_host = 'Localhost';
 $db_user = 'root';
-$db_pass = '';
+$db_pass = 'Einstein1008';
 
-$db_name = 'Chat';
+$db_name = 'chat';
 
-if($connection = mql_connect($db_host, $db_user, $db_pass)){
+if($connection = mysqli_connect($db_host, $db_user, $db_pass)){
+
   echo 'Connected to Database Server...<br />';
 
-  if($database = mysql_select_db($db_name, $connection)){
+  if($database = mysqli_select_db($connection,$db_name)){
     echo 'Database has been selected...<br />';
-  }
-  else {
+  } else {
     echo 'Database wat not found<br />';
   }
-  else {
+} else {
     echo 'Unable to connect to server <br />';
-  }
 }
  ?>
