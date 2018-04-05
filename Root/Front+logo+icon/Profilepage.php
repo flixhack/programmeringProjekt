@@ -38,9 +38,8 @@
   <a href="webCore.php"><i class="fa fa-home"></i></a>
   <a href="#"><i class="fa fa-envelope"></i></a>
   <a href="#"><i class="fa fa-search"></i></a>
-  <a href="Profilepage.php"><i class="fa fa-user"></i></a>
+  <a href="#"><i class="fa fa-user"></i></a>
 </div>
-<p class="sansserif">Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
   </body>
 
 </html>
