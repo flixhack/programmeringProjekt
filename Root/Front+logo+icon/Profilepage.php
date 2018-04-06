@@ -19,7 +19,7 @@
 
 .icon-bar a {
     float: left;
-    width: 25%;
+    width: 33%;
     text-align: center;
     padding: 3px 0;
     transition: all 0.3s ease;
@@ -37,7 +37,6 @@
 <div class="icon-bar">
   <a href="webCore.php"><i class="fa fa-home"></i></a>
   <a href="#"><i class="fa fa-envelope"></i></a>
-  <a href="#"><i class="fa fa-search"></i></a>
   <a href="#"><i class="fa fa-user"></i></a>
 </div>
 
