@@ -40,8 +40,6 @@
   <a href="#"><i class="fa fa-user"></i></a>
 </div>
 
-
-
   </body>
 
 </html>
