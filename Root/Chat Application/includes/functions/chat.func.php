@@ -2,9 +2,10 @@
 
 function get_msg(){
 
-$query = "SELECT 'sender', 'Message' FROM 'chat', 'chat' ";
+$query = "SELECT 'Sender', 'Message' FROM 'chat', 'chat' ";
+$link = mysqli_connect("127.0.0.1", "root", "Einstein1008", "chat");
 
-$run = mysqli_query($query);
+$run = mysqli_query($link, $query);
 
 $messages = array();
 
@@ -16,7 +17,7 @@ while($message = mysqli_fetch_assoc($run)){
 return $messages;
 
 }
-
+$link = mysqli_connect("127.0.0.1", "root", "Einstein1008", "chat");
 function send_msg($sender, $message){
     if(!empty($sender) && !empty($message)) {
 
@@ -25,7 +26,7 @@ function send_msg($sender, $message){
 
         $query = "INSERT INTO 'chat','chat' VALUES(null,'{$sender}','{$message}')";
 
-        if ($run = mysqli_query($query)){
+        if ($run = mysqli_query($link, $query)){
           return true;
         } else{
             return false;
