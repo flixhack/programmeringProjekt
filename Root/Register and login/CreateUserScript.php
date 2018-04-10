@@ -28,7 +28,7 @@ $password = hash('sha1', $preHashPass);
 
 
 $userCheck = "SELECT * FROM 'mellowMembers' WHERE email = '$email'";
-$sql = "INSERT INTO `mellowmembers`(`Email`, `Fname`, `Lname`, `Password`, `gender`, `God`) VALUES ('$email','$fname','$lname','$password','$gender','f')";
+$sql = "INSERT INTO 'mellowmembers'('Email', 'Fname', 'Lname', 'Password', 'gender', 'God') VALUES ('$email','$fname','$lname','$password','$gender','f')";
 if (mysqli_query($conn, $sql)) {
     echo "Database created successfully";
 } else {
