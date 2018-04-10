@@ -24,7 +24,51 @@
 <input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw"><br>
 <input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw"><br>
 
-<A HREF="FrontLogin.php"><Button type="Button" onclick="windows.location.href='databaseTest.php'" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></a>
+<A HREF="FrontLogin.php"><Button type="Button" onclick="<?php
+
+$servername = "localhost";
+$username = "test";
+$password = "test";
+$database = "mellowUsers";
+
+
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+
+
+
+
+$id = 'hey';
+$email = $_POST['email'];
+$fname = $_POST1['fname'];
+$lname = $_POST2['lname'];
+$gender = 'm';
+$preHashPass = $_POST3['pw'];
+$password = hash('sha1', $preHashPass);
+
+
+$userCheck = "SELECT * FROM 'mellowMembers' WHERE email = '$email'";
+$sql = "INSERT INTO `mellowmembers`(`Email`, `Fname`, `Lname`, `Password`, `gender`, `God`) VALUES ('$email','$fname','$lname','$password','$gender','f')";
+if (mysqli_query($conn, $sql)) {
+    echo "Database created successfully";
+} else {
+    echo "Error creating database: " . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+
+
+
+
+
+ ?>
+" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></a>
 <A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member?Login Here!</A>
 
 

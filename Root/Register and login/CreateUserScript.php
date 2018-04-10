@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "test";
 $password = "test";
-$database = "mellowUsers"
+$database = "mellowUsers";
 
 
 // Create connection
@@ -13,20 +13,22 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$preHashPass=$_post['pw'];
+
+
 
 
 // getting inputs
-$id=$_post[]
-$email=$_post['$email'];
-$fname=$_post['fname'];
-$lname=$_post['$lname'];
-$gender=
-$password=
+$id = $_post[]
+$email = $_post['email'];
+$fname = $_post['fname'];
+$lname = $_post['lname'];
+$gender = 'm';
+$preHashPass = $_post['pw'];
+$password = hash('sha1', $preHashPass);
 
 
-
-$sql = "INSER INTO mellowMembers VALUES('')";
+$userCheck = "SELECT * FROM 'mellowMembers' WHERE email = '$email'";
+$sql = "INSERT INTO `mellowmembers`(`Email`, `Fname`, `Lname`, `Password`, `gender`, `God`) VALUES ('$email','$fname','$lname','$password','$gender','f')";
 if (mysqli_query($conn, $sql)) {
     echo "Database created successfully";
 } else {
