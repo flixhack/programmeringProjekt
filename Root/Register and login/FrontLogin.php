@@ -17,8 +17,7 @@
   <input type="password" style="position:absolute;TOP:35px;left:1030px" placeholder="Password" name="fname"><br>
   <input type="email" style="position:absolute;TOP:35px;left:850px" placeholder="Email" name="fname"><br>
   <A HREF="Front+logo+icon/webCore.php"><button type="button" style="position:absolute;TOP:35px;left:1210px;WIDTH:60;HEIGHT:22">Login </button>
-  <button type="button" style="position:absolute;TOP:35px;left:1210px;WIDTH:60;HEIGHT:22" onclick="php" >Login </button>
 
+  <A HREF="Registre.php"style="position:absolute;TOP:60px;left:850px">Not user yet? Sign up here!</A>
 
-  <A HREF="Registre.php" style="position:absolute;TOP:60px;left:850px">Not user yet? Sign up here!</A>
 </html>
