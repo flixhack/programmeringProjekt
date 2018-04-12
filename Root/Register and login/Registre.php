@@ -18,65 +18,16 @@
 <p class="sansserif" style="position:absolute;TOP:340;left:448"> Confirm Password</P>
   </body>
 
-<form name="form" action="" method="get">
+<form name="form" action="CreateUserScript.php" method="POST">
   <input type="email" style="position:absolute;TOP:250px;left:600px;WIDTH:200" name="email" id="email"><br>
   <input type="text" style="position:absolute;TOP:275px;left:600px;WIDTH:200" name="fname" id="fname"><br>
   <input type="text" style="position:absolute;TOP:300px;left:600px;WIDTH:200" name="lname" id="lname"><br>
   <input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw" id="pw"><br>
   <input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw" id="cpw"><br>
 
-
-
-<A HREF="FrontLogin.php"><Button type="Button" onclick="<?php
-
-$servername = "localhost";
-$username = "test";
-$password = "test";
-$database = "mellowUsers";
-
-
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-
-
-
-
-$id = 'hey';
-$email = $_get['email'];
-$fname = $_get['fname'];
-$lname = $_get['lname'];
-$gender = 'm';
-$preHashPass = $_get['pw'];
-$password = hash('sha1', $preHashPass);
-
-
-$userCheck = "SELECT * FROM 'mellowMembers' WHERE email = '$email'";
-$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','f')";
-if (mysqli_query($conn, $sql)) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: " . mysqli_error($conn);
-}
-
-mysqli_close($conn);
-
-
-
-
-
- ?>
-<<<<<<< HEAD
-" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></A>
-=======
-" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></a>
+<input type="submit" value="create account" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
 </form>
->>>>>>> b633a2ca50cdc50de2f92ebfc6240110c166daf9
+
 <A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member?Login Here!</A>
 
 
