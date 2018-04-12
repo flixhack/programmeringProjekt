@@ -45,16 +45,16 @@ if (!$conn) {
 
 
 $id = 'hey';
-$email = $_POST['email'];
-$fname = $_POST1['fname'];
-$lname = $_POST2['lname'];
+$email = $_GET['email'];
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
 $gender = 'm';
-$preHashPass = $_POST3['pw'];
+$preHashPass = $_POST['pw'];
 $password = hash('sha1', $preHashPass);
 
 
 $userCheck = "SELECT * FROM 'mellowMembers' WHERE email = '$email'";
-$sql = "INSERT INTO 'mellowmembers'('Email', 'Fname', 'Lname', 'Password', 'gender', 'God') VALUES ('$email','$fname','$lname','$password','$gender','f')";
+$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','f')";
 if (mysqli_query($conn, $sql)) {
     echo "Database created successfully";
 } else {
