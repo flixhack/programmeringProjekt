@@ -18,11 +18,14 @@
 <p class="sansserif" style="position:absolute;TOP:340;left:448"> Confirm Password</P>
   </body>
 
-<input type="email" style="position:absolute;TOP:250px;left:600px;WIDTH:200" name="email"><br>
-<input type="text" style="position:absolute;TOP:275px;left:600px;WIDTH:200" name="fname"><br>
-<input type="text" style="position:absolute;TOP:300px;left:600px;WIDTH:200" name="lname"><br>
-<input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw"><br>
-<input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw"><br>
+<form name="form" action="" method="get">
+  <input type="email" style="position:absolute;TOP:250px;left:600px;WIDTH:200" name="email" id="email"><br>
+  <input type="text" style="position:absolute;TOP:275px;left:600px;WIDTH:200" name="fname" id="fname"><br>
+  <input type="text" style="position:absolute;TOP:300px;left:600px;WIDTH:200" name="lname" id="lname"><br>
+  <input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw" id="pw"><br>
+  <input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw" id="cpw"><br>
+
+
 
 <A HREF="FrontLogin.php"><Button type="Button" onclick="<?php
 
@@ -45,11 +48,11 @@ if (!$conn) {
 
 
 $id = 'hey';
-$email = $_GET['email'];
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
+$email = $_get['email'];
+$fname = $_get['fname'];
+$lname = $_get['lname'];
 $gender = 'm';
-$preHashPass = $_POST['pw'];
+$preHashPass = $_get['pw'];
 $password = hash('sha1', $preHashPass);
 
 
@@ -68,7 +71,12 @@ mysqli_close($conn);
 
 
  ?>
+<<<<<<< HEAD
 " style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></A>
+=======
+" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></a>
+</form>
+>>>>>>> b633a2ca50cdc50de2f92ebfc6240110c166daf9
 <A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member?Login Here!</A>
 
 
