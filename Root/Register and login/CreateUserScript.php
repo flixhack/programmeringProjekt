@@ -30,11 +30,11 @@ $password = hash('sha1', $preHashPass);
 
 
 $userCheck = "SELECT * FROM 'mellowMembers' WHERE email = '$email'";
-$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','t')";
+$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','f')";
 if (mysqli_query($conn, $sql)) {
-    echo "Database created successfully";
+    header('Location: FrontLogin.php');
 } else {
-    echo "Error creating database: " . mysqli_error($conn);
+    echo "Error: could not connect, try again later: " . mysqli_error($conn);
 }
 
 mysqli_close($conn);
