@@ -21,7 +21,7 @@ if(isset($_POST['send'])){
  ?>
 </div>
 
-<form acton="index.php" method="post">
+<form action="index.php" method="post">
   <lable>Enter name:<input type="text" name="sender"/></lable>
   <lable>Enter Message:<input type="text" name="message"/></lable>
   <input type="submit" name="send" value="Send message"/>

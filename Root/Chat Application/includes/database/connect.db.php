@@ -2,7 +2,7 @@
 
 $db_host = 'Localhost';
 $db_user = 'root';
-$db_pass = 'Einstein1008';
+$db_pass = 'toor';
 
 $db_name = 'chat';
 

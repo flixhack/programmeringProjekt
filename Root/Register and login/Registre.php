@@ -68,7 +68,7 @@ mysqli_close($conn);
 
 
  ?>
-" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></a>
+" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">Create account</button></A>
 <A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member?Login Here!</A>
 
 
