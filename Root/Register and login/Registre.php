@@ -25,7 +25,7 @@
   <input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw" id="pw"><br>
   <input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw" id="cpw"><br>
 
-<input type="submit" value="create account" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
+<input type="submit" value="Create account" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
 </form>
 
 <A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member?Login Here!</A>
