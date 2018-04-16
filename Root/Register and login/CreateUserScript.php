@@ -30,7 +30,7 @@ $passwordC = hash('sha1', $preHashPassC);
 
 
 $sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','f')";
-$check="SELECT * FROM mellowMembers WHERE Email = 'felix@mathiassen.dk'";
+$check="SELECT * FROM mellowMembers WHERE Email = '{$email}'";
 $rs = mysqli_query($conn,$check);
 if ($password == $passwordC) {
   if($rs->num_rows == 0){
@@ -43,7 +43,7 @@ if ($password == $passwordC) {
 } } else {
       echo "passwords are not identical";
 }
-    
+
 
 mysqli_close($conn);
 
