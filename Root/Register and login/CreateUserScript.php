@@ -14,12 +14,9 @@ if (!$conn) {
 }
 
 
-
-
-
-
 $id = 'hey';
-$email = $_POST['email'];
+$email2 = $_POST['email'];
+$email = strtolower($email2);
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $gender = 'm';
@@ -29,7 +26,7 @@ $password = hash('sha1', $preHashPass);
 $passwordC = hash('sha1', $preHashPassC);
 
 
-$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','f')";
+$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','t')";
 $check="SELECT * FROM mellowMembers WHERE Email = '{$email}'";
 $rs = mysqli_query($conn,$check);
 if ($password == $passwordC) {
