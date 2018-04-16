@@ -14,10 +14,6 @@ if (!$conn) {
 }
 
 
-
-
-
-
 $id = 'hey';
 $email = $_POST['email'];
 $fname = $_POST['fname'];
