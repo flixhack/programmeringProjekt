@@ -11,7 +11,20 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$login 
+
+$email = $_POST['Email'];
+$preHashPass = $_POST['Password'];
+$passwordLogin = hash('sha1', $preHashPass);
+
+
+
+$loginCheck="SELECT * FROM mellowMembers WHERE Email = '{$email}' AND Password = '{$passwordLogin}'";
+rs = mysqli_query($conn,$loginCheck);
+if ($rs->num_rows != 0) {
+  echo "Logged in";
+} else {
+  echo "Wrong password or email";
+}
 
 
  ?>
