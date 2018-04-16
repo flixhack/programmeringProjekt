@@ -39,11 +39,11 @@ if ($password == $passwordC) {
       } else {
         echo "Error: could not connect, try again later: " . mysqli_error($conn);
 }    } else {
-        echo "user already exist";
+        echo "User already exist";
 } } else {
-      echo "passwords are not identical";
+      echo "Passwords are not identical";
 }
-    
+
 
 mysqli_close($conn);
 
