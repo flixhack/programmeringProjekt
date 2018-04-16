@@ -14,9 +14,9 @@ if (!$conn) {
 
 
 
-$check="SELECT * FROM mellowMembers WHERE Email = 'felix@mathiassen.dk'";
+$check="SELECT * FROM mellowMembers WHERE Email = 'felix@mathiamassen.dk'";
 $rs = mysqli_query($conn,$check);
-if($rs->num_rows != 0) {
+if($rs->num_rows == 0) {
     echo "User Already in Exists<br/>";
 }else {
   echo "user not found";
