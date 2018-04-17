@@ -21,8 +21,8 @@ return $messages;
 function send_msg($sender, $message){
     if(!empty($sender) && !empty($message)) {
 
-        $sender = mysqli_real_escape_string($sender);
-        $message = mysqli_real_escape_string($message);
+        $sender = mysqli_real_escape_string($link, $sender);
+        $message = mysqli_real_escape_string($link, $message);
 
         $query = "INSERT INTO 'chat','chat' VALUES(null,'{$sender}','{$message}')";
         $link = mysqli_connect("127.0.0.1", "root", "toor", "chat");
