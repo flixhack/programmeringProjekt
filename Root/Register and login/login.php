@@ -1,33 +1,27 @@
 <?php
-
-$servername = "localhost";
-$username = "test";
-$password = "test";
-$database = "mellowUsers";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-$email2 = $_POST['Email'];
-$email = strtolower($email2);
-$preHashPass = $_POST['Password'];
-$passwordLogin = hash('sha1', $preHashPass);
+include '../Header.php';
 
 
 
-$loginCheck="SELECT * FROM mellowMembers WHERE Email = '{$email}' AND Password = '{$passwordLogin}'";
-$rs = mysqli_query($conn,$loginCheck);
-if ($rs->num_rows != 0) {
-  
+$email2 = $_POST['Email']; /*Sets a variable with the text from Email input*/
+$email = strtolower($email2); /*Sets the email to be all lowercase*/
+$preHashPass = $_POST['Password']; /*Sets a variable with the text from Password input*/
+$passwordLogin = hash('sha1', $preHashPass); /*Hashes the password*/
+
+
+$loginCheck="SELECT * FROM mellowMembers WHERE Email = '{$email}' AND Password = '{$passwordLogin}'"; /*Making an sql-query that search for an matching email and hashed password*/
+$rs = mysqli_query($conn, $loginCheck); /*Connect to our database and runs the sql-query*/
+if ($rs->num_rows != 0) { /*Checks if database returns a row or not*/
+  $_SESSION["loggedIn"] = "1";
   header('Location: ../Front+logo+icon/webcore.php');
 } else {
-  echo "Wrong password or email";
+    $_SESSION["loggedIn"] = "0"; ?>
+    <script type="text/javascript">
+      alert('Incorrect email or password')
+    </script>
+<?php
 }
-
-
+/*if ($_SESSION["loggedIn"] == "0") {
+  header('location: FrontLogin.php');
+}*/
  ?>
