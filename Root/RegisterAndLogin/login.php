@@ -13,15 +13,10 @@ $loginCheck="SELECT * FROM mellowMembers WHERE Email = '{$email}' AND Password =
 $rs = mysqli_query($conn, $loginCheck); /*Connect to our database and runs the sql-query*/
 if ($rs->num_rows != 0) { /*Checks if database returns a row or not*/
   $_SESSION["loggedIn"] = "1";
-  header('Location: ../Front+logo+icon/webcore.php');
+  header('Location: ../Front+logo+icon/webCore.php');
 } else {
-    $_SESSION["loggedIn"] = "0"; ?>
-    <script type="text/javascript">
-      alert('Incorrect email or password')
-    </script>
-<?php
+    $_SESSION["loggedIn"] = "0";
+    print '<script type="text/javascript">alert("Incorrect email or password"); window.location = "FrontLogin.php"; </script>';
 }
-/*if ($_SESSION["loggedIn"] == "0") {
-  header('location: FrontLogin.php');
-}*/
+
  ?>

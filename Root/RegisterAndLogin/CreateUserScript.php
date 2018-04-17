@@ -1,20 +1,10 @@
 <?php
-
-$servername = "localhost";
-$username = "test";
-$password = "test";
-$database = "mellowUsers";
+include '../Header.php';
 
 
 
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
 
 
-$id = 'hey';
 $email2 = $_POST['email'];
 $email = strtolower($email2);
 $fname = $_POST['fname'];
@@ -26,7 +16,7 @@ $password = hash('sha1', $preHashPass);
 $passwordC = hash('sha1', $preHashPassC);
 
 
-$sql = "INSERT INTO mellowmembers VALUES ('{$email}','{$fname}','{$lname}','{$password}','{$gender}','t')";
+$sql = "INSERT INTO mellowMembers VALUES (NULL,'{$email}','{$fname}','{$lname}','{$password}','{$gender}','t')";
 $check="SELECT * FROM mellowMembers WHERE Email = '{$email}'";
 $rs = mysqli_query($conn,$check);
 if ($password == $passwordC) {
