@@ -24,6 +24,9 @@
   <input type="email" style="position:absolute;TOP:300px;left:600px;WIDTH:200" name="email" id="email"><br>
   <input type="password" style="position:absolute;TOP:325px;left:600px;WIDTH:200" name="pw" id="pw"><br>
   <input type="password" style="position:absolute;TOP:350px;left:600px;WIDTH:200 " name="cpw" id="cpw"><br>
+  <input type="radio" name="gender" value="Male" style="position:absolute;TOP:225px;left:600px"checked>Male<br>
+  <input type="radio" name="gender" value="Female" style="position:absolute;TOP:200px;left:700px"> <p class="sansserif" style="position:absolute;TOP:225;left:71  0">Female </p><br><br>
+
 
 <input type="submit" value="Create account" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
 </form>

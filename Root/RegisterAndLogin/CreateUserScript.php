@@ -16,7 +16,7 @@ $password = hash('sha1', $preHashPass);
 $passwordC = hash('sha1', $preHashPassC);
 
 
-$sql = "INSERT INTO mellowMembers VALUES (NULL,'{$email}','{$fname}','{$lname}','{$password}','{$gender}','t')";
+$sql = "INSERT INTO mellowMembers VALUES (NULL,'{$email}','{$fname}','{$lname}','{$password}','{$gender}','f')";
 $check="SELECT * FROM mellowMembers WHERE Email = '{$email}'";
 $rs = mysqli_query($conn,$check);
 if ($password == $passwordC) {
