@@ -26,9 +26,9 @@ if ($password == $passwordC) {
       } else {
         echo "Error: could not connect, try again later: " . mysqli_error($conn);
 }    } else {
-        echo "User already exist";
+        print '<script type="text/javascript">alert("User already exist"); window.location = "CreateUserScript.php"; </script>';
 } } else {
-      echo "Passwords are not identical";
+      print '<script type="text/javascript">alert("Passwords are not identical"); window.location = "CreateUserScript.php"; </script>';
 }
 
 
