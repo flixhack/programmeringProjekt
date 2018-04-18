@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> Mellow </title>
     <link href="Interface.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="Icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 input[type=text] {
