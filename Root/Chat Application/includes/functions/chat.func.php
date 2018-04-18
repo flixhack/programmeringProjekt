@@ -10,8 +10,7 @@ $run = mysqli_query($link, $query);
 $messages = array();
 
 while($message = mysqli_fetch_assoc($run)){
-  $messages[]=array('sender'=>$sender['Sender'],
-    'message'=>$message['Message']);
+  $messages[]=array('sender'=>$sender['Sender'],'message'=>$message['Message']);
 }
 
 return $messages;
@@ -19,6 +18,7 @@ return $messages;
 }
 
 function send_msg($sender, $message){
+$link = mysqli_connect("127.0.0.1", "root", "toor", "chat");
     if(!empty($sender) && !empty($message)) {
 
         $sender = mysqli_real_escape_string($link, $sender);
