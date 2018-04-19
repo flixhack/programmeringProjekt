@@ -13,11 +13,11 @@
 <script>
 
 function submitChat() {
-	if(form1.uname.value == '' || form1.msg.value == '') {
+	if(form1.sender.value == '' || form1.msg.value == '') {
 		alert("ALL FIELDS ARE MANDATORY!!!");
 		return;
 	}
-	var uname = form1.uname.value;
+	var sender = form1.sender.value;
 	var msg = form1.msg.value;
 	var xmlhttp = new XMLHttpRequest();
 
@@ -27,7 +27,7 @@ function submitChat() {
 		}
 	}
 
-	xmlhttp.open('GET','insert.php?uname='+uname+'&msg='+msg,true);
+	xmlhttp.open('GET','insert.php?sender='+sender+'&msg='+msg,true);
 	xmlhttp.send();
 
 }
@@ -45,7 +45,7 @@ $(document).ready(function(e){
 </head>
 <body>
 <form name="form1">
-Enter Your Chatname: <input type="text" name="uname" /> <br />
+Enter Your Chatname: <input type="text" name="sender" /> <br />
 Your Message: <br />
 <textarea name="msg"></textarea><br />
 <a href="#" onclick="submitChat()">Send</a><br /><br />
