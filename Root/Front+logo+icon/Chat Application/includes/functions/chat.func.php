@@ -2,7 +2,7 @@
 
 function get_msg(){
 
-$query = "SELECT 'Sender', 'Message' FROM 'chat', 'chat' ";
+$query = "SELECT `Sender`,`Message` FROM chat.`chat`";
 $link = mysqli_connect("127.0.0.1", "root", "toor", "chat");
 
 $run = mysqli_query($link, $query);
@@ -13,6 +13,8 @@ while($message = mysqli_fetch_assoc($run)){
   $messages[]=array('sender'=>$sender['Sender'],
     'message'=>$message['Message']);
 }
+
+
 
 return $messages;
 
