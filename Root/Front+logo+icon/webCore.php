@@ -1,3 +1,6 @@
+<?php
+include '../Header.php';
+ ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -71,6 +74,13 @@ input[type=text] {
 </form>
 <input type="button" class="button" style="position:absolute;TOP:11px;left:1192px;WIDTH:80;HEIGHT:21" value="Search">
 <h1>Home</h1>
+<?php
+if ($_SESSION["loggedIn"] != "1"); {
+ print '<script window.location ="../RegisterAndLogin/FrontLogin.php"; </script>';
+}
+ ?>
+
+
   </body>
 
 </html>
