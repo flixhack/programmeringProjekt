@@ -6,7 +6,7 @@ include '../Header.php';
     <meta charset="utf-8">
     <title> Mellow </title>
     <link href="Interface.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="con.png">
+    <link rel="icon" href="Icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 input[type=text] {
@@ -74,11 +74,6 @@ input[type=text] {
 </form>
 <input type="button" class="button" style="position:absolute;TOP:11px;left:1192px;WIDTH:80;HEIGHT:21" value="Search">
 <h1>Home</h1>
-<?php
-if ($_SESSION["loggedIn"] != "1"); {
- print '<script window.location ="../RegisterAndLogin/FrontLogin.php"; </script>';
-}
- ?>
 
 
   </body>

@@ -12,7 +12,3 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
-if ($_SESSION["loggedIn"] != "1"); {
-  print '<script type="text/javascript">alert("You have been logged out"); window.location = "../RegisterAndLogin/FrontLogin.php"; </script>';
-}
