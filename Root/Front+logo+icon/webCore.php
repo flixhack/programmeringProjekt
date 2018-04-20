@@ -6,7 +6,7 @@ include '../Header.php';
     <meta charset="utf-8">
     <title> Mellow </title>
     <link href="Interface.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="Icon.png">
+    <link rel="icon" href="con.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 input[type=text] {
@@ -64,7 +64,7 @@ input[type=text] {
 
 <div class="icon-bar">
   <a href="Profilepage.php"><i class="fa fa-user"></i></a>
-  <a href="ChatPage.php"><i class="fa fa-envelope"></i></a>
+  <a href="../ChatApp/#"><i class="fa fa-envelope"></i></a>
   <a href="Settings.php"><i class="fa fa-gear"></i></a>
   <a class="active" href="webCore.php"><i class="fa fa-home"></i></a>
   <a href="../RegisterAndLogin/FrontLogin.php"><i class="fa fa-sign-out"></i></a>
