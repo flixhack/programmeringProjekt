@@ -14,8 +14,8 @@
   </body>
 
 <form name="login" action="login.php" method="POST">
-  <input type="password" style="position:absolute;TOP:35px;left:1030px" placeholder="Password" name="Password" id="Password"><br>
   <input type="email" style="position:absolute;TOP:35px;left:850px" placeholder="Email" name="Email" id="Email"><br>
+  <input type="password" style="position:absolute;TOP:35px;left:1030px" placeholder="Password" name="Password" id="Password"><br>
 
 <input type="submit" value="Login" style="position:absolute;TOP:35px;left:1210px;WIDTH:60;HEIGHT:22">
 </form>
