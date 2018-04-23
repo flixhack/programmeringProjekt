@@ -6,7 +6,7 @@
 <title>Chat Box</title>
 
 <script
-  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  src="//code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 
@@ -22,7 +22,7 @@ function submitChat() {
 	var xmlhttp = new XMLHttpRequest();
 
 	xmlhttp.onreadystatechange = function() {
-		if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+		if(xmlhttp.readyState == 4000 && xmlhttp.status == 2000) {
 			document.getElementById('chatlogs').innerHTML = xmlhttp.responseText;
 		}
 	}
@@ -36,7 +36,7 @@ $(document).ready(function(e){
 	$.ajaxSetup({
 		cache: false
 	});
-	setInterval( function(){ $('#chatlogs').load('logs.php'); }, 2 );
+	setInterval( function(){ $('#chatlogs').load('logs.php'); }, 750 );
 });
 
 </script>

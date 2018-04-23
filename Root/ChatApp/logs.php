@@ -5,7 +5,7 @@ $password = "Dn91ND1aMw3ZkuENdC1j1J8F";
 $database = "chatApp";
 
 
-$conn = mysqli_connect($servername, $root, $password, $database);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
 $query ="SELECT * FROM beskeder ORDER BY id DESC";
 
