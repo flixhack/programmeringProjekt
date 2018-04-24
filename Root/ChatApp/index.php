@@ -50,13 +50,11 @@ $(document).ready(function(e){
 <form name="form1">
 Enter Your Chatname: <input type="text" name="sender" /> <br />
 Your Message: <br />
-<<<<<<< HEAD
 <textarea name="msg" style="color: yellow; background-color: #2f2f2f"></textarea><br />
 <input id="Send" type="button" class="button" value="Send" onclick="submitChat();" />
 =======
 <textarea name="msg"></textarea><br />
 <a href="#" onclick="submitChat()">Send</a><br /><br />
->>>>>>> 285161583a37fe7a83a01d634cf805afbe71a51a
 </form>
 <div id="chatlogs">
 LOADING CHATLOG...
