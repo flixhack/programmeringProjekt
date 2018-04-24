@@ -7,7 +7,7 @@ include 'HTMLIncluder.php';
 
 <div class="icon-bar">
   <a class="active" href="Profilepage.php"><i class="fa fa-user"></i></a>
-  <a href="ChatPage.php"><i class="fa fa-envelope"></i></a>
+  <a href="../ChatApp/#"><i class="fa fa-envelope"></i></a>
   <a href="Settings.php"><i class="fa fa-gear"></i></a>
   <a href="webCore.php"><i class="fa fa-home"></i></a>
   <a href="../RegisterAndLogin/FrontLogin.php"><i class="fa fa-sign-out"></i></a>
