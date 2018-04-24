@@ -1,5 +1,5 @@
 <?php
-include '../Header.php';
+include '../Headernl.php';
 
 
 
@@ -22,13 +22,13 @@ $rs = mysqli_query($conn,$check);
 if ($password == $passwordC) {
   if($rs->num_rows == 0){
     if (mysqli_query($conn, $sql)) {
-        header('Location: FrontLogin.php');
+        print '<script type="text/javascript"> window.location = "FrontLogin.php"; </script>';
       } else {
         echo "Error: could not connect, try again later: " . mysqli_error($conn);
 }    } else {
         print '<script type="text/javascript">alert("User already exist"); window.location = "CreateUserScript.php"; </script>';
 } } else {
-      print '<script type="text/javascript">alert("Passwords are not identical"); window.location = "CreateUserScript.php"; </script>';
+      print '<script type="text/javascript">alert("Passwords are not identical"); window.location = "Registre.php"; </script>';
 }
 
 
