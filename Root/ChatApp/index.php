@@ -1,5 +1,6 @@
 <?php
-
+include '../destroySession.php';
+include '../Header.php';
 include 'HTMLIncluder.php';
 
 ?>
