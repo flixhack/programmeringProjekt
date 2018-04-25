@@ -64,16 +64,8 @@ $(document).ready(function(e){
 <form name="form1">
 Enter Your Chatname: <input type="text" name="sender" /> <br />
 Your Message: <br />
-<<<<<<< HEAD
 <textarea name="msg" style="color: yellow; background-color: #2f2f2f"></textarea><br />
 <input id="Send" type="button" class="button" value="Send" onclick="submitChat();" />
-=======
-<textarea name="msg"></textarea><br />
-<a href="#" onclick="submitChat()">Send</a><br /><br />
-=======
-<textarea id='output'name="msg" style="color: yellow; background-color: #2f2f2f"></textarea><br />
-<input id="Send" type="button" class="button" value="Send" onclick="submitChat();" />
->>>>>>> fb932fe120a94b8399e40d62c51deafa633bc13f
 </form>
 <div id="chatlogs">
 LOADING CHAT...
