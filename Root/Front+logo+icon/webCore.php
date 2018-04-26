@@ -25,11 +25,11 @@ $query ="SELECT * FROM mellowMembers WHERE ID = $ID";
 $result = mysqli_query($conn, $query);
 
 while($data = mysqli_fetch_array($result)){
-  echo "Welcome" ." ". $data['fname'] ." ". $data['lname'];
+  echo "Welcome" ." ". $data['fname'].",";
 
 }
 ?>
-<p>We've created this website for our programmning exam. <br /> It's a social media with an opportunity to register as an user <br /> and use the chat function to chat with all of Mellows users. </p>
+<p>We've created this website for our programmning exam. <br /> It's a social media with an opportunity to register as a user <br /> and use the chat function to chat with all of Mellows members. </p>
 <p>We wish you a nice day</p>
 <p>With best regards <br /> Felix & Martin</p>
 </body>
