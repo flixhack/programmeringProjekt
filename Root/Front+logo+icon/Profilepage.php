@@ -21,10 +21,9 @@ include 'HTMLIncluder.php';
 
 <?php
 
-$fname = 'Martin Moeldrup';
-$lname = 'Jensen';
+$ID = $_SESSION["loggedIn"];
 
-$query ="SELECT * FROM mellowMembers WHERE fname = '$fname' AND lname = '$lname'";
+$query ="SELECT * FROM mellowMembers WHERE ID = $ID";
 
 $result = mysqli_query($conn, $query);
 

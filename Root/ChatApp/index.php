@@ -7,7 +7,7 @@ include 'HTMLIncluder.php';
 
 <html>
 <head>
-<title>Chat Box</title>
+
 
 <script
   src="//code.jquery.com/jquery-2.2.4.min.js"
@@ -17,12 +17,12 @@ include 'HTMLIncluder.php';
 <script>
 
 function submitChat() {
-	if(form1.sender.value == '' || form1.msg.value == '') {
+	if(form1.msg.value == '') {
 		alert("ALL FIELDS ARE MANDATORY!");
 		return;
 
 	}
-	var sender = form1.sender.value;
+
 	var msg = form1.msg.value;
 	var xmlhttp = new XMLHttpRequest();
 
@@ -32,8 +32,9 @@ function submitChat() {
 		}
 	}
 
-	xmlhttp.open('GET','insert.php?sender='+sender+'&msg='+msg,true);
+	xmlhttp.open('GET','insert.php?msg='+msg,true);
 	xmlhttp.send();
+
 document.getElementById("output").value='';
 }
 
@@ -63,9 +64,8 @@ $(document).ready(function(e){
 <input type="button" class="button" style="position:absolute;TOP:11px;left:1192px;WIDTH:80;HEIGHT:21" value="Search">
 
 <form name="form1">
-Enter Your Chatname: <input type="text" name="sender" /> <br />
 Your Message: <br />
-<textarea name="msg" style="color: yellow; background-color: #2f2f2f" rows=5 cols=30></textarea><br />
+<textarea id='output' name="msg" style="color: yellow; background-color: #2f2f2f" rows=5 cols=30></textarea><br />
 <input id="Send" type="button" class="button" value="Send" onclick="submitChat();" />
 </form>
 <div id="chatlogs">
