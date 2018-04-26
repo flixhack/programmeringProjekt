@@ -21,8 +21,11 @@ include 'HTMLIncluder.php';
 
 <?php
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4f45abac79199a812a914c1d3c6b68c4718aa674
 $fname = 'Martin Moeldrup';
 $lname = 'Jensen';
 
@@ -32,7 +35,10 @@ $result = mysqli_query($conn, $query);
 
 while($data = mysqli_fetch_array($result)){
   echo $data['fname'] ." ". $data['lname'];
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4f45abac79199a812a914c1d3c6b68c4718aa674
 }
 ?>
 
