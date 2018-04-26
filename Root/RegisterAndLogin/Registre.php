@@ -33,7 +33,7 @@
 <input type="submit" value="Create account" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
 </form>
 
-<A HREF="FrontLogin.php" style="position:absolute;TOP:395px;left:600px">Already a member? Login Here!</A>
+<A HREF="FrontLogin.php" style="color:#ffff00;position:absolute;TOP:395px;left:600px">Already a member? Login Here!</A>
 
 
 </html>
