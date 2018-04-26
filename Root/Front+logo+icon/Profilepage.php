@@ -21,7 +21,17 @@ include 'HTMLIncluder.php';
 
 <?php
 
+<<<<<<< HEAD
 $ID = $_SESSION["loggedIn"];
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 4f45abac79199a812a914c1d3c6b68c4718aa674
+$fname = 'Martin Moeldrup';
+$lname = 'Jensen';
+>>>>>>> d3369764b1e3e1d37d4f680b984ec970b3e566bf
 
 $query ="SELECT * FROM mellowMembers WHERE ID = $ID";
 
@@ -29,6 +39,10 @@ $result = mysqli_query($conn, $query);
 
 while($data = mysqli_fetch_array($result)){
   echo $data['fname'] ." ". $data['lname'];
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4f45abac79199a812a914c1d3c6b68c4718aa674
 }
 ?>
 

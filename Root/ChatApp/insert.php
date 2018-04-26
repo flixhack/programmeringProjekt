@@ -1,18 +1,21 @@
 <?php
+include '../Header.php';
+
+$ID = $_SESSION["loggedIn"];
+
+$qy ="SELECT * FROM mellowMembers WHERE ID = $ID";
+$rs = mysqli_query($conn, $qy);
+$data = mysqli_fetch_array($rs);
+$sender = $data['fname'];
 
 
-$servername = "db";
-$username = "root";
-$password = "Dn91ND1aMw3ZkuENdC1j1J8F";
-$database = "chatApp";
-
-$sender = $_REQUEST['sender'];
 $msg = $_REQUEST['msg'];
 
-$conn = mysqli_connect($servername, $username, $password, $database);
+
 
 $query2 = "INSERT INTO beskeder (sender, msg) VALUES ('{$sender}', '{$msg}')";
 mysqli_query($conn, $query2);
+
 
 $query="SELECT * FROM beskeder ORDER BY id DESC";
 
