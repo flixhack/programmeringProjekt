@@ -2,8 +2,8 @@
   <head>
     <meta charset="utf-8">
     <title> Mellow </title>
-    <link href="Interface.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="Icon.png">
+    <link href="../RegisterAndLogin/Interface.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../RegisterAndLogin/IMG/Icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 input[type=text] {
@@ -31,7 +31,7 @@ input[type=text] {
 <body>
 <p>
 <a href="webCore.php">
-<img src="Mellow2.png" alt="Title" style="width:190px;height:40px;">
+<img src="../RegisterAndLogin/IMG/Mellow2.png" alt="Title" style="width:190px;height:40px;">
 </a>
 </p>
 <style>
