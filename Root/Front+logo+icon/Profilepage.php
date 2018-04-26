@@ -19,4 +19,22 @@ include 'HTMLIncluder.php';
 <h1>Profile</h1>
   </body>
 
+<?php
+
+
+
+$fname = 'Martin Moeldrup';
+$lname = 'Jensen';
+
+$query ="SELECT * FROM mellowMembers WHERE fname = '$fname' AND lname = '$lname'";
+
+$result = mysqli_query($conn, $query);
+
+while($data = mysqli_fetch_array($result)){
+  echo $data['fname'] ." ". $data['lname'];
+
+}
+?>
+
+
 </html>
