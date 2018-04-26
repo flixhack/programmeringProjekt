@@ -1,5 +1,5 @@
 <?php
-include '../destroySession.php';
+
 include '../Header.php';
 include 'HTMLIncluder.php';
 
@@ -65,7 +65,7 @@ $(document).ready(function(e){
 <form name="form1">
 Enter Your Chatname: <input type="text" name="sender" /> <br />
 Your Message: <br />
-<textarea name="msg" style="color: yellow; background-color: #2f2f2f"></textarea><br />
+<textarea name="msg" style="color: yellow; background-color: #2f2f2f" rows=5 cols=30></textarea><br />
 <input id="Send" type="button" class="button" value="Send" onclick="submitChat();" />
 </form>
 <div id="chatlogs">
