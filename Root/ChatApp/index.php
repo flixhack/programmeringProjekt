@@ -1,7 +1,7 @@
 <?php
 
 include '../Header.php';
-include 'HTMLIncluder.php';
+include '../Front+logo+icon/HTMLIncluder.php';
 
 ?>
 
@@ -18,7 +18,7 @@ include 'HTMLIncluder.php';
 
 function submitChat() {
 	if(form1.msg.value == '') {
-		alert("ALL FIELDS ARE MANDATORY!");
+		alert("You need to write a message");
 		return;
 
 	}
@@ -42,7 +42,7 @@ $(document).ready(function(e){
 	$.ajaxSetup({
 		cache: false
 	});
-	setInterval( function(){ $('#chatlogs').load('logs.php'); }, 750 );
+	setInterval( function(){ $('#chatlogs').load('logs.php'); }, 500 );
 });
 
 </script>

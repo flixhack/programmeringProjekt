@@ -16,8 +16,22 @@ include 'HTMLIncluder.php';
 </form>
 <input type="button" class="button" style="position:absolute;TOP:11px;left:1192px;WIDTH:80;HEIGHT:21" value="Search">
 <h1>Home</h1>
+<?php
 
+$ID = $_SESSION["loggedIn"];
 
-  </body>
+$query ="SELECT * FROM mellowMembers WHERE ID = $ID";
+
+$result = mysqli_query($conn, $query);
+
+while($data = mysqli_fetch_array($result)){
+  echo "Welcome" ." ". $data['fname'].",";
+
+}
+?>
+<p>We've created this website for our programmning exam. <br /> It's a social media with an opportunity to register as a user <br /> and use the chat function to chat with all of Mellows members. </p>
+<p>We wish you a nice day</p>
+<p>With best regards <br /> Felix & Martin</p>
+</body>
 
 </html>

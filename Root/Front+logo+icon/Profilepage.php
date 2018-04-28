@@ -22,9 +22,6 @@ include 'HTMLIncluder.php';
 <?php
 
 $ID = $_SESSION["loggedIn"];
-$fname = 'Martin Moeldrup';
-$lname = 'Jensen';
-
 
 $query ="SELECT * FROM mellowMembers WHERE ID = $ID";
 

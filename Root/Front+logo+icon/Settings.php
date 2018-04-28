@@ -16,6 +16,8 @@ include 'HTMLIncluder.php';
 </form>
 <input type="button" class="button" style="position:absolute;TOP:11px;left:1192px;WIDTH:80;HEIGHT:21" value="Search">
 <h1>Settings</h1>
+
+<p> Currently under development...</p>
   </body>
 
 </html>
