@@ -30,7 +30,7 @@ input[type=text] {
 
 <body>
 <p>
-<a href="webCore.php">
+<a href="../Front+logo+icon/webCore.php">
 <img src="../RegisterAndLogin/IMG/Mellow2.png" alt="Title" style="width:190px;height:40px;">
 </a>
 </p>
