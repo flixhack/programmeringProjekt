@@ -9,11 +9,12 @@ include '../Front+logo+icon/HTMLIncluder.php';
 <head>
 
 <script
-  src="//code.jquery.com/jquery-2.2.4.min.js"
+  src="//code.jquery.com/jquery-2.2.4.min.js" //Linking to a library
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 
 <script>
+
 
 
 function submitChat() {
@@ -26,7 +27,7 @@ function submitChat() {
 	var msg = form1.msg.value;
 	var xmlhttp = new XMLHttpRequest();
 
-	xmlhttp.onreadystatechange = function() {
+	xmlhttp.onreadystatechange = function() { //An EventHandler that is called whenever the readyState attribute changes.
 		if(xmlhttp.readyState == 4000 && xmlhttp.status == 2000) {
 			document.getElementById('chatlogs').innerHTML = xmlhttp.responseText;
 		}
