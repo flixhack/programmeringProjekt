@@ -9,16 +9,14 @@ include '../Front+logo+icon/HTMLIncluder.php';
 <head>
 
 <script
-  src="//code.jquery.com/jquery-2.2.4.min.js" //Linking to a library
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+  src="//code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="> //Linking to a library
+</script>
 
 <script>
 
-
-
 function submitChat() {
-	if(form1.msg.value == '') { //if the textarea is empty, you get message about you need to write a message
+	if(form1.msg.value == '') { //if the textarea is empty, you get an alert about you need to write a message
 		alert("You need to write a message");
 		return;
 
