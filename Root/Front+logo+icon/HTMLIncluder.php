@@ -1,4 +1,4 @@
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"> <!-- Contains repetitive HTML -->
   <head>
     <meta charset="utf-8">
     <title> Mellow </title>

@@ -1,7 +1,7 @@
 <?php
-session_start();
+session_start(); //Starts session
 
-$servername = "db";
+$servername = "db"; //Sets database info to variables for the sql connect
 $username = "root";
 $password = "Dn91ND1aMw3ZkuENdC1j1J8F";
 $database = "Mellow";

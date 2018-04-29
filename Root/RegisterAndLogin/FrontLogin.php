@@ -12,7 +12,7 @@
 <img src="IMG/Mellow2.png" alt="Title" style="width:190px;height:40px;">
 <p class="sansserif">Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
   </body>
-
+<!-- Creates input fields for login and makes the submit button run login.php -->
 <form name="login" action="login.php" method="POST">
   <input type="email" style="position:absolute;TOP:35px;left:850px" placeholder="Email" name="Email" id="Email"><br>
   <input type="password" style="position:absolute;TOP:35px;left:1030px" placeholder="Password" name="Password" id="Password"><br>

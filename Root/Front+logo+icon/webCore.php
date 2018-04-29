@@ -1,9 +1,9 @@
 <?php
-include '../Header.php';
+include '../Header.php'; // includes header and the repeating HTML
 include 'HTMLIncluder.php';
  ?>
 <body>
-
+<!-- Creates icon bar -->
 <div class="icon-bar">
   <a href="Profilepage.php"><i class="fa fa-user"></i></a>
   <a href="../ChatApp/#"><i class="fa fa-envelope"></i></a>
@@ -18,7 +18,7 @@ include 'HTMLIncluder.php';
 <input type="button" class="button" style="position:absolute;TOP:11px;left:1192px;WIDTH:80;HEIGHT:21" value="Search">
 <h1>Home</h1>
 <?php
-
+//Fetches your name from the database for use on the home page
 $ID = $_SESSION["loggedIn"];
 
 $query ="SELECT * FROM mellowMembers WHERE ID = $ID";

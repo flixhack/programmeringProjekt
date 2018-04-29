@@ -1,9 +1,9 @@
 <?php
-include '../Header.php';
+include '../Header.php';// includes header and the repeating HTML
 include 'HTMLIncluder.php';
  ?>
 <body>
-
+<!-- Creates icon bar -->
 <div class="icon-bar">
   <a href="Profilepage.php"><i class="fa fa-user"></i></a>
   <a href="../ChatApp/#"><i class="fa fa-envelope"></i></a>

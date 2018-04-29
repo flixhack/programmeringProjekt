@@ -1,10 +1,6 @@
 <?php
-session_start();
-session_unset();
-session_destroy();
-
-
-header("location: /RegisterAndLogin/FrontLogin.php");
-
-
+session_start(); //Starts session
+session_unset(); //Unsets the session variable loggedIn
+session_destroy(); // Destroys the session
+header("location: /RegisterAndLogin/FrontLogin.php"); //redirects you to front page
  ?>
