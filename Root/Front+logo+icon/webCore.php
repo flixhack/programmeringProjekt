@@ -11,6 +11,7 @@ include 'HTMLIncluder.php';
   <a class="active" href="webCore.php"><i class="fa fa-home"></i></a>
   <a href="../destroySession.php"><i class="fa fa-sign-out"></i></a>
 </div>
+
 <form>
 <input type="text" placeholder="Search..." style="position:absolute;TOP:15px;left:1040px;WIDTH:150;HEIGHT:21" name="search"><br>
 </form>
@@ -29,7 +30,7 @@ while($data = mysqli_fetch_array($result)){
 
 }
 ?>
-<p>We've created this website for our programmning exam. <br /> It's a social media with an opportunity to register as a user <br /> and use the chat function to chat with all of Mellows members. </p>
+<p>This is Mellow. <br /> We've created this website for our programmning exam. <br /> It's a social media with an opportunity to register as a user <br /> and use the chat function to chat with all of Mellows members. </p>
 <p>We wish you a nice day</p>
 <p>With best regards <br /> Felix & Martin</p>
 </body>
