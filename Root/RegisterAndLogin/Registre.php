@@ -11,6 +11,7 @@
 <img src="IMG/Mellow2.png" alt="Title" style="width:190px;height:40px;">
 <p class="sansserif">Hello, welcome to our site. <br /> This is the project for our programming exam.</p>
 
+<!-- Creates all the labels for the register page -->
 <p class="sansserif" style="position:absolute;TOP:240;left:505"> First Name</P>
 <p class="sansserif" style="position:absolute;TOP:265;left:507"> Last Name</P>
 <p class="sansserif" style="position:absolute;TOP:290;left:547"> Email</P>
@@ -19,7 +20,7 @@
 <p class="sansserif" style="position:absolute;TOP:210;left:730">Female </p>
 <p class="sansserif" style="position:absolute;TOP:210;left:630">Male </p>
   </body>
-
+<!-- Creates all the input fields for register page and tells the submit button to run 'CreateUserScript.php' -->
 <form name="form" action="CreateUserScript.php" method="POST">
   <input type="text" style="position:absolute;TOP:250px;left:600px;WIDTH:200" name="fname" id="fname"><br>
   <input type="text" style="position:absolute;TOP:275px;left:600px;WIDTH:200" name="lname" id="lname"><br>
@@ -33,6 +34,7 @@
 <input type="submit" value="Create account" style="position:absolute;TOP:375px;left:600px;WIDTH:200;HEIGHT:20">
 </form>
 
+<!-- Creates link to login page -->
 <A HREF="FrontLogin.php" style="color:#ffff00;position:absolute;TOP:395px;left:600px">Already a member? Login Here!</A>
 
 
