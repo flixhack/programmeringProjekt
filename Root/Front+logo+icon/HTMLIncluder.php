@@ -30,10 +30,7 @@ input[type=text] {
 
 <body>
 <p>
-
 <a href="webCore.php"> <!--linking the title picture to the homepage, so when you click on the title, you get redirected to the homepage-->
-<a href="../Front+logo+icon/webCore.php">
-
 <img src="../RegisterAndLogin/IMG/Mellow2.png" alt="Title" style="width:190px;height:40px;">
 </a>
 </p>
