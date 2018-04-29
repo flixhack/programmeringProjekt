@@ -4,7 +4,7 @@
     <title> Mellow </title>
     <link href="../RegisterAndLogin/Interface.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="../RegisterAndLogin/IMG/Icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--linking to a website containing icons for an icon bar-->
     <style>
 input[type=text] {
     background-color: #2f2f2f;
@@ -30,7 +30,11 @@ input[type=text] {
 
 <body>
 <p>
+<<<<<<< HEAD
+<a href="webCore.php"> <!--linking the title picture to the homepage, so when you click on the title, you get redirected to the homepage-->
+=======
 <a href="../Front+logo+icon/webCore.php">
+>>>>>>> 807a1448b2b579ccfb178b8ecdf470a1a4838040
 <img src="../RegisterAndLogin/IMG/Mellow2.png" alt="Title" style="width:190px;height:40px;">
 </a>
 </p>
@@ -46,14 +50,15 @@ input[type=text] {
     float: left;
     width: 20%;
     text-align: center;
-    padding: 3px 0;
-    transition: all 0.3s ease;
+    padding: 2px 0;
     color: yellow;
     font-size: 24px;
 }
 
-
+.icon-bar a:hover {
+    background-color: #20201f;
+}
 .active {
-    background-color: #20201f !important;
+    background-color: #20201f;
 }
 </style>
