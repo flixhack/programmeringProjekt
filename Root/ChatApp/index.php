@@ -9,12 +9,10 @@ include '../Front+logo+icon/HTMLIncluder.php';
 <head>
 
 <script
-
   src="//code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="> //Linking to a library
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"> //Linking to a library
 </script>
-
-
 
 <script>
 
