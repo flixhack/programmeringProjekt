@@ -20,7 +20,7 @@ include 'HTMLIncluder.php';
   </body>
 
 <?php
-//Fetches your name from the database and display it on Profilepage
+//Fetches your name from the database and displays it on Profilepage
 $ID = $_SESSION["loggedIn"];
 
 $query ="SELECT * FROM mellowMembers WHERE ID = $ID";
