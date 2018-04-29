@@ -9,9 +9,15 @@ include '../Front+logo+icon/HTMLIncluder.php';
 <head>
 
 <script
+<<<<<<< HEAD
   src="//code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="> //Linking to a library
 </script>
+=======
+  src="//code.jquery.com/jquery-2.2.4.min.js" 
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+>>>>>>> 520cdd67c2f45d396d5b5e60a3025d1046c3dfe5
 
 <script>
 
@@ -41,7 +47,7 @@ $(document).ready(function(e){
 	$.ajaxSetup({
 		cache: false
 	});
-	setInterval( function(){ $('#chatlogs').load('logs.php'); }, 500 ); //Sets the page to refresh and load logs every 0.5 s
+	setInterval( function(){ $('#chatlogs').load('logs.php'); }, 500 ); //Sets the page to refresh and load logs every 500 millisecond (0.5 s)
 });
 
 </script>
